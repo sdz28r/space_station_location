@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class="jumbotron">
+<div class="container">
+<h1>DETAILS</h1>
+<div class="container">
+    <div class="container">
+<p>Number of people on ISS(at present): <%= pdata["number"] %></p>
+<% for(var i =0;i<pdata["number"];i++){ %>
+    <li>CRAFT: <%= pdata["people"][i]["craft"] %></li>
+    <li>NAME: <%= pdata["people"][i]["name"] %></li>
+    <br>
+<% } %>
+    </div>
+</div>
+<form action="/location">
+    <button class="btn-primary btn-lg">ISS_LOCATION</button>
+</form>
+</div>
+</div>
+<div id = "iss"><img src="https://images.all-free-download.com/images/graphicthumb/iss_space_station_international_space_station_221119.jpg" width="600px" height="475px"></div>
+
+<% include partials/footer %>

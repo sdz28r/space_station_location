@@ -1,0 +1,17 @@
+{
+  "name": "iss_project",
+  "version": "1.0.0",
+  "description": "gives the Location of ISS on the map(real time)",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "siddhant",
+  "license": "ISC"
+}
